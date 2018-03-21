@@ -1,9 +1,11 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row class="flex-container">
-        <h1 class="nav-title">Music Forecaster 2.1.0</h1>
-        <button class="nav-link"><a routerLink="">Home</a></button>
-        <button class="nav-link"><a routerLink="artists">Artists Page</a></button>
+<mat-toolbar color='primary'>
+    <mat-toolbar-row class='flex-container'>
+        <h1 class='nav-title'>Music Forecaster 2.1.0</h1>
     </mat-toolbar-row>
 </mat-toolbar>
+<nav mat-tab-nav-bar>
+    <a mat-tab-link routerLink=''>Home</a>
+    <a mat-tab-link routerLink='artists'>Artists</a>
+</nav>
 
 <router-outlet></router-outlet>

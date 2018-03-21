@@ -19,10 +19,6 @@ th {
     width: 50%;
 }
 
-td {
-    color:purple;
-}
-
 tr:nth-child(even) {
-    background-color: #BBDEFB;
+    background-color: #1E88E5;
 }

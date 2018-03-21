@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import { Observable } from 'rxjs/Rx';
-import { AnticipatedAlbumsService } from '../anticipated-albums.service';
+import { DataService } from '../data.service';
 import { AlbumTablesComponent } from '../album-tables/album-tables.component';
 
 @Component({
@@ -14,14 +14,14 @@ export class HomeComponent implements OnInit {
   allReleaseDates: Array<string> = [];
   collectedByDate: Array<Array<Object>> = [];
 
-  constructor(private albumsService: AnticipatedAlbumsService) { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.getAlbums();
   }
 
   getAlbums() {
-    this.albumsService.getAlbums().subscribe(
+    this.dataService.getAlbums().subscribe(
       data => {
         this.anticipatedAlbums = data['anticipatedAlbums'];
         this.allReleaseDates = data['allReleaseDates'];

@@ -7,7 +7,7 @@ import { MaterialModule } from './material.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AlbumTablesComponent } from './album-tables/album-tables.component';
-import { AnticipatedAlbumsService } from './anticipated-albums.service';
+import { DataService } from './data.service';
 import { ArtistsComponent } from './artists/artists.component';
 
 @NgModule({
@@ -24,7 +24,7 @@ import { ArtistsComponent } from './artists/artists.component';
     MaterialModule
   ],
   providers: [
-      AnticipatedAlbumsService
+    DataService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,1 +1,5 @@
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+h1, p {
+    font-family: Roboto, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}

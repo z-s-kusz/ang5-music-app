@@ -1,3 +1,19 @@
-<p>
-  artists works!
-</p>
+<h1 class='headline'>Your Artists List</h1>
+<p>* Sample only - data does not persist between sessions</p>
+<p>Add your artists here (becuase Zach doesn't want to connect spotify and thus develop this without live reload).</p>
+<mat-divider></mat-divider>
+
+<mat-form-field class='form-container'>
+  <input matInput type='text' placeholder='Artist Name' (input)='inputChange($event)' [value]="newArtist" />
+  <!--input and value seperated becuase some believe 2 way data binding is evil
+    still others would say this is just 2 way binding with extra steps -->
+  <button matSuffix (click)='addArtist(newArtist)' [disabled]='newArtist.length < 1'>Enter</button>
+</mat-form-field>
+
+<mat-card class='list-card'>
+  <mat-form-field *ngFor='let artist of artists' class='list-container'>
+    <input matInput type='text' [value]='artist.name' class='edit' (input)='editArtist($event, artist.id)' />
+    <mat-icon matSuffix (click)='deleteArtist(artist)'>cancel</mat-icon>
+  </mat-form-field>
+</mat-card>
+

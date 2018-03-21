@@ -1,0 +1,27 @@
+.form-container {
+    width: 33%;
+    margin: 4px 5%;
+}
+
+p {
+    margin: 8px 5%;
+}
+
+.headline {
+    text-align: center;
+}
+
+.list-card {
+    margin: 14px 10%;
+    justify-content: space-around;
+}
+
+.list-container {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.edit {
+    width: 400px;
+}
