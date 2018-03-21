@@ -1,0 +1,28 @@
+mat-card-content {
+    justify-content: center;
+}
+
+.card-spacer {
+    margin-bottom: 14px;
+}
+
+table {
+    width: 100%;
+    font-size: 20px!important;
+}
+/* !important is not something I like to use but in this case I needed to 
+override material card styles and since this is just the stylesheet for 1 component it is fairly benign*/
+
+th {
+    text-align: left;
+    font-size: 20px;
+    width: 50%;
+}
+
+td {
+    color:purple;
+}
+
+tr:nth-child(even) {
+    background-color: #BBDEFB;
+}

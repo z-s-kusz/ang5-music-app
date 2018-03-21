@@ -1,0 +1,12 @@
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-title {
+    flex: 6;
+}
+
+.nav-link {
+    flex: 1;
+}

@@ -1,0 +1,8 @@
+<h1 class='center-title'>All Upcoming Releases</h1>
+
+<app-album-tables [collectedByDate]='collectedByDate' [allReleaseDates]='allReleaseDates'></app-album-tables>
+
+<div class='spinner-container'>
+    <mat-progress-spinner color='primary' mode='indeterminate' *ngIf='collectedByDate.length === 0'>
+    </mat-progress-spinner>
+</div>

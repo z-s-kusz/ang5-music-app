@@ -1,0 +1,15 @@
+<mat-card class='card-spacer' *ngFor='let date of collectedByDate; let i = index'>
+  <mat-card-title class=' md-primary-light center-title' >{{allReleaseDates[i]}}</mat-card-title>
+    <mat-card-content>
+    <table>
+        <tr>
+          <th>Artist</th>
+          <th>Album</th> 
+        </tr>
+        <tr *ngFor='let album of date'>
+          <td>{{album.artistName}}</td>
+          <td>{{album.albumName}}</td>
+        </tr>
+    </table>
+  </mat-card-content>
+</mat-card>
